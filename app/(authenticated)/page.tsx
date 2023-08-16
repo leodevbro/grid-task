@@ -45,6 +45,30 @@ const gridItems: GridItem[] = [
     name: 'Figma',
     descr: 'See your designes',
     thumb: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg'
+  },
+  {
+    id: '5',
+    name: 'Figma',
+    descr: 'See your designes',
+    thumb: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg'
+  },
+  {
+    id: '6',
+    name: 'Figma',
+    descr: 'See your designes',
+    thumb: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg'
+  },
+  {
+    id: '7',
+    name: 'Figma',
+    descr: 'See your designes',
+    thumb: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg'
+  },
+  {
+    id: '8',
+    name: 'Figma',
+    descr: 'See your designes',
+    thumb: 'https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg'
   }
 ]
 
