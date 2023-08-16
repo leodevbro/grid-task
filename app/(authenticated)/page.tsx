@@ -59,6 +59,7 @@ const SweetItem = chakra(Box, {
   baseStyle: {
     display: 'flex',
     flexDirection: `column`,
+    rowGap: `5px`,
     padding: `24px`,
     // border: '2px solid green',
     borderRadius: 8,
@@ -76,7 +77,7 @@ const SweetTitle = chakra(Box, {
 
     fontSize: `20px`,
     fontStyle: `normal`,
-    fontWeight: `300`,
+    fontWeight: `bold`,
     lineHeight: `normal`
   }
 })
@@ -87,6 +88,15 @@ const SweetDescr = chakra(Box, {
     fontSize: `14px`,
     fontStyle: `normal`,
     fontWeight: `400`
+  }
+})
+
+const SweetImageArea = chakra(Box, {
+  baseStyle: {
+    flexGrow: 1,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
   }
 })
 
@@ -117,11 +127,17 @@ const App = () => {
                   <SweetItem key={item.id}>
                     <SweetTitle>{item.name}</SweetTitle>
                     <SweetDescr>{item.descr}</SweetDescr>
-                    <div>
+                    <SweetImageArea>
                       <SweetImageBox>
-                        <Image alt="logo" src={item.thumb} fill />
+                        <Image
+                          alt="logo"
+                          src={item.thumb}
+                          fill
+                          priority
+                          sizes={` `}
+                        />
                       </SweetImageBox>
-                    </div>
+                    </SweetImageArea>
                   </SweetItem>
                 )
               })}
