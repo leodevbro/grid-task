@@ -3,6 +3,11 @@ import { Box, Flex, useColorModeValue as mode, chakra } from '@chakra-ui/react'
 import Sidebar from './_components/Sidebar'
 import Image from 'next/image'
 
+import { Inter } from 'next/font/google'
+
+// If loading a variable font, you don't need to specify the font weight
+const inter = Inter({ subsets: ['latin'] })
+
 // import { Metadata } from 'next'
 
 const ITEM_WIDTH = 272 // px
@@ -110,7 +115,12 @@ const SweetImageBox = chakra(Box, {
 
 const App = () => {
   return (
-    <Box height="100vh" overflow="hidden" position="relative">
+    <Box
+      height="100vh"
+      overflow="hidden"
+      position="relative"
+      className={inter.className}
+    >
       <Flex h="full" id="app-container">
         <Sidebar />
         <Box bg={mode('#fafafa', 'gray.800')} flex="1" p="6">
